@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Template_Title</title>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script> -->
+    <link rel="icon" href="imgs/favicon.png" sizes="16x16" type="image/png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+    #screen1-landing {
+        /*
+            No tocar esta parte de abajo ↓↓↓
+        */
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: bottom center;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        border: 0;
+        /*
+            A partir de esta parte ↓↓↓ se puede modificar sin problemas
+        */
+        background-image: url("images/imagen_de_fondo.jpg");
+        background-color: #092e4c;
+        opacity: 1;
+        z-index: 200;
+        color: white;
+    }
+    </style>
+
+<body>
+    <!--
+
+    SCREEN 1: START
+
+    -->
+    <div id="screen1-landing">
+        <div class="container">
+            <div class="main__text">
+                <p>Some text</p>
+                <h1>OTHER TEXT</h1>
+            </div>
+            <button>
+                Start Button
+            </button>
+        </div>
+    </div>
+    <!--
+
+    SCREEN 1: END
+
+    -->
+</body>
+<script type="text/javascript">
+/*
+      No tocar esta parte ↓↓↓
+*/
+window.onresize = function() {
+    document.body.height = window.innerHeight;
+    $("#screen1-landing").css("height", window.innerHeight + "px !important");
+}
+window.onresize();
+/*
+      Agrega tu codigo aqui abajo ↓↓↓
+*/
+</script>

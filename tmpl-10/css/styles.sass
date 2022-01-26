@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;800;900&display=swap')
+
+/* vARIABLES */ 
+$fuentePrincipal: 'Raleway', sans-serif
+$sombras: #161616
+$colorPrimario: #444242
+
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+.container
+    display: grid
+    grid-template-rows: repeat(3, 1fr)
+    align-items: center
+    height: 100vh
+    justify-content: center
+    justify-items: center
+
+.logo
+    height: 45vh
+    grid-row: 1 / 2
+    padding: 20px
+    display: flex
+    justify-content: center
+    align-items: start
+    @media (max-width: 320px) 
+        height: 25vh
+        align-items: center
+
+    .logo_content
+        background-color: #ec7067
+        font-family: $fuentePrincipal
+        font-size: clamp(2rem, 5vw, 5rem)
+        width: 150px
+        height: 150px
+        text-align: center
+        border-radius: 360px
+        padding: 15px
+        font-family: $fuentePrincipal
+        text-transform: uppercase
+        font-weight: 800
+        box-shadow: 0px 0px 15px $sombras
+        display: flex
+        justify-content: center
+        align-items: center
+    @media (max-width: 320px) 
+        .logo_content
+            width: 100px
+            height: 100px
+            font-size: 1.2rem
+            
+
+.main__text
+    grid-row: 2 / 3
+    padding: 20px 20px
+    width: clamp(90%, 100vw, 320px)
+    background-color: rgba(256, 256, 256, .6)
+    color: $colorPrimario
+    height: 40vh
+    @media (max-width: 320px) 
+        height: auto
+        width: 90%
+    
+    h1
+        font-family: $fuentePrincipal
+        text-transform: uppercase
+        font-size: 3rem
+        text-align: center
+        @media (max-width: 320px) 
+            font-size: 2rem
+        
+    .paragraph
+        font-family: $fuentePrincipal
+        font-size: 1.5rem
+        text-align: center
+        margin-top: 20px
+        font-weight: 800
+        @media (max-width: 320px) 
+            font-size: 1rem
+        
+.cta
+    grid-row: 3/4
+    height: 10vh
+    width: 90%
+    @media (max-width: 320px) 
+        height: 5vh
+    
+button
+    background: url(../images/bt_10.png)
+    padding: 15px
+    width: 100%
+    color: #fff
+    font-family: $fuentePrincipal
+    border-radius: 360px
+    font-weight: 800
+    text-transform: uppercase
+    font-size: 1.5rem
+    border: 3px solid #fff
